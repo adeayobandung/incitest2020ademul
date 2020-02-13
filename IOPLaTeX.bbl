@@ -51,6 +51,9 @@ M.~Li and Z.~Gong, ``{Research on Inventory Management of Electric Power
 N.~Sampouw and M.~Hartono, ``{The Role of Ergonomics in Suporting Supply Chain
   Performance in Manufacturing Companies: a Literature review}.''
 
+\bibitem{Rusell2011}
+R.~S. Rusell and B.~W. Taylor, \emph{{Operation Management}}, 2011.
+
 \bibitem{Ibrahim}
 \BIBentryALTinterwordspacing
 A.~Ibrahim and D.~D. Ismawan, ``{Penerapan Supply Chain Management Sistem
@@ -66,8 +69,5 @@ M.~Djunaidi, B.~A. Devy, E.~Setiawan, and R.~Fitriadi, ``{Determination of lot
   \emph{IOP Conference Series: Materials Science and Engineering}, vol. 674,
   no.~1.\hskip 1em plus 0.5em minus 0.4em\relax Institute of Physics
   Publishing, nov 2019.
-
-\bibitem{Rusell2011}
-R.~S. Rusell and B.~W. Taylor, \emph{{Operation Management}}, 2011.
 
 \end{thebibliography}
