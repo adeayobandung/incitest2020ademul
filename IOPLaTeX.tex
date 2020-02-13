@@ -73,7 +73,7 @@
 
 
 \begin{abstract}
-XYZ Store is a one of computer shop in Jambi City which selling computer equipment. This computer shop requires good inventory management in order to manage the procurement for customers precisely. So, a computerized system which is supported by supporting methods which chose in the prepartory proccess in computer shop to ensure that supplies can be existing. One of method that can be used in the management of the inventory is a method of Supply Chain Management (SCM). The system developed is a computer equipment inventory information system using the concept of Supply Chain Management use some software like MySQL for DBMS (Database Mangament System) and Web Application for selling in computer shop.
+The XYZ Store is a one of computer shop in Jambi City which selling computer equipment. This computer shop requires good inventory management in order to manage the procurement for customers precisely, estimated number of minimum ordered and predicted capital that must spent every year. So, a computerized system which is supported by supporting methods which chose in the prepartory proccess in computer shop to ensure that supplies can be existing. One of method that can be used in the management of the inventory is a method of Supply Chain Management (SCM). The system developed is a computer equipment inventory information system using the concept of Supply Chain Management use some software like MySQL for DBMS (Database Mangament System) and Web Application for selling in computer shop.
 
 \end{abstract}
 
@@ -99,7 +99,7 @@ To overcome this problem, the authors designed the application to support XYZ St
 
 SCM is needed for organizations to compete in dynamic international markets. The purpose of SCM is to combine internal activities and cross-organizational activities to provide customers value \cite{Habib2019}.
 
-\section{Research Methods}
+\section{Methods}
 \subsection{Data Collection Methodology and Data Analysis}
 Data collection techniques began with observing business processes, interviews with owners and literature studies. Literature study is done by digging more information from similar research.
 
@@ -189,8 +189,10 @@ where:\\
 - L = lead time\\
 - $\sigma_d$ = the standard deviation of daily demand\\
 - z = number of standard deviation corresponding to the service level probability\\
-- z$\sigma_d\sqrt{L}$ = safety stock\\ \\
-This following data product in store \textbf{Table \ref{tableBarang}} :
+- z$\sigma_d\sqrt{L}$ = safety stock
+
+\section{Results and discussions}
+The results of the study were conducted experiments on data taken from sales applications. This following data product in store \textbf{Table \ref{tableBarang}} :
 \begin{table}[h!]
 	\centering
 	\caption{\label{tableBarang} Data transaction popular in 2019 years old at xyz store}
@@ -204,12 +206,14 @@ This following data product in store \textbf{Table \ref{tableBarang}} :
 		\hline
 	\end{tabular}
 \end{table}
+
+Base on table \ref{tableBarang} is the sales data obtained from the sales application in the XYZ store. While the number of sales per product can be seen in the following data:
 \begin{table}[h!]
 	\centering
 	\caption{\label{tableOut} Data stock out, product: Cart 810 in 2019 years old at xyz store}
 	\begin{tabular}{ llcc }
 		\hline
-		\textbf{No} & \textbf{Month} & \textbf{Stock In} & \textbf{Stock Out} \\
+		\textbf{No} & \textbf{Month} & \textbf{In} & \textbf{Out} \\
 		\hline
 		1 & January & 15 & 16  \\ 
 		2 & February & 5 & 6  \\ 
@@ -227,7 +231,9 @@ This following data product in store \textbf{Table \ref{tableBarang}} :
 		\multicolumn{2}{c}{Total} & {105} & {103}\\
 		\hline
 	\end{tabular}
-\end{table}\\
+\end{table}
+
+Based on the table \ref{tableOut} is sales and purchase data obtained from sales applications in XYZ stores based on Cartrige 810 products for a year.\\ \\
 \textbf{Calculate EOQ Product: Cart (Cartrige) 810}
 \begin{enumerate}[label=(\alph*)]
 	\item Demand (D) = The estimate demand order product cart 810 in 2019 years old = 103 Pcs
@@ -286,9 +292,11 @@ R = 0,9 + 1,41
 So, if when stock to reach 2 or 3 pcs, it must be reorder as many as 13 Pcs. In accordance with previous EOQ calculations.
 
 
-\section{Results and discussions}
+\section{Conclutions}
+By Using the EOQ model and supply chain management concept can help control inventory in maintaining stock stability in improving customer service. Then be able to maintain expenditure on holding costs and capital can be managed properly. The XYZ Stores make an order every month from the results of this study can be seen how many times a year to make an order. So, The XYZ Stores can be estimated and predicted capital that must be spent every year, estimated revenue for the store and is able to maintain stability from stock out.
 
-By Using the EOQ model and supply chain management concept can help control inventory in maintaining stock stability in improving customer service. Then be able to maintain expenditure on holding costs and capital can be managed properly. The XYZ Stores make an order every month from the results of this study can be seen how many times a year to make an order. So, The XYZ Stores can be estimated capital that must be spent every year, estimated revenue for the store and is able to maintain stability from stock out.
+\section*{Acknowledgments}
+The authors would like to thank Mr. Prof. Dr. Ir. Eddy Soeryanto Soegoto, MT as Chancellor of the Universitas Komputer Indonesia (UNIKOM), and Mr. Dr. Yeffry Handoko Putra, ST., M.T. as Head of the Master of Information Systems. And special thanks were given to Mulyadi, S.Kom, M.S.I. who have provided full support and guidance so that this paper can be realized. 
 
 
 \section*{References}
