@@ -57,10 +57,12 @@
 
 \title[Preparing an article for INCITEST 2020]{Application of Supply Chain Management Information System of Inventory at Computer Shop in Jambi City}
 
-\author{Ade Indra Saputra$^{1*}$ and Mulyadi$^{2}$}
-\address{$^1$Master of Information Systems, Universitas Komputer Indonesia, Indonesia}
+\author{Ade Indra Saputra$^{1*}$, Rahma Wahdiniwaty$^{2}$}
+%\author{Ade Indra Saputra, Rahma Wahdiniwaty}
+\address{$^1$Jurusan Magister Sistem Informasi, Fakultas Pascasarjana, Universitas Komputer Indonesia}
+\address{$^2$Jurusan Magister Manajemen, Fakultas Pascarsajana, Universitas Komputer Indonesia}
 %\address{$^2$Address Two, Neverland}
-\address{$^2$Department of Information System, Universitas Dinamika Bangsa Jambi, Indonesia}
+%\address{$^2$Universitas Komputer Indonesia}
 \ead{ade.75118017@mahasiswa.unikom.ac.id}
 
 %\author{Author Two}
@@ -73,7 +75,9 @@
 
 
 \begin{abstract}
-The XYZ Store is a one of computer shop in Jambi City which selling computer equipment. This computer shop requires good inventory management in order to manage the procurement for customers precisely, estimated number of minimum ordered and predicted capital that must spent every year. So, a computerized system which is supported by supporting methods which chose in the prepartory proccess in computer shop to ensure that supplies can be existing. One of method that can be used in the management of the inventory is a method of Supply Chain Management (SCM). The system developed is a computer equipment inventory information system using the concept of Supply Chain Management use some software like MySQL for DBMS (Database Mangament System) and Web Application for selling in computer shop.
+This study discusses the inventory system in requires good inventory management in order to manage the procurement for customers. One of method that can be used in the management of the inventory is a method of Supply Chain Management (SCM)  concept for inventory control proccess. In inventory managing, the store needs a system that can ensure the supply of products in guranteed quality, on time delivery and the right amount in accordance with the reservation. By application of the supply chain management in calculate reorder point with safety stock can help control inventory in maintaining stock stability in improving customer service. Following the total reorder with saftey stock provides the effect to imporve business performance because it can improve the services to customers, sell new products, and increase sales. So, The XYZ Store can be estimated and predicted capital that must be spent every year, estimated revenue for the store and is able to maintain stability from stock out.
+
+%The XYZ Store is a one of computer shop in Jambi City which selling computer equipment. This computer shop requires good inventory management in order to manage the procurement for customers precisely, estimated number of minimum ordered and predicted capital that must spent every year. So, a computerized system which is supported by supporting methods which chose in the prepartory proccess in computer shop to ensure that supplies can be existing. One of method that can be used in the management of the inventory is a method of Supply Chain Management (SCM). The system developed is a computer equipment inventory information system using the concept of Supply Chain Management use some software like MySQL for DBMS (Database Mangament System) and Web Application for selling in computer shop.
 
 \end{abstract}
 
@@ -97,9 +101,9 @@ Estimates for inventory are usually predicted based on product items and the num
 
 To overcome this problem, the authors designed the application to support XYZ Store business growth with features that can ensure that orders can be fulfilled, using the Supply Chain Management (SCM) method. The supply chain consists of all stages involved, directly or indirectly, in meeting customer demand. The supply chain includes not only producers and suppliers, but also transporters, warehouses, retailers, and customers themselves \cite{Sharma2012}.
 
-SCM is needed for organizations to compete in dynamic international markets. The purpose of SCM is to combine internal activities and cross-organizational activities to provide customers value \cite{Habib2019}.
+SCM is needed for organizations to compete in dynamic international markets. The purpose of SCM is to combine internal activities and cross-organizational activities to provide customers value \cite{Habib2019}. Supply chain management is a form of competitive excellence which is applied in every industrial system \cite{Sampouw}. All these problems can be solved by the Supply Chain Management (SCM) approach which is an integrative method or approach that manages the flow of products, information, and money in an integrated manner involving parties ranging from upstream to downstream consisting of suppliers, factories, distribution networks, and logistics services \cite{Widianty2019}.
 
-\section{Methods}
+\section{Method}
 \subsection{Data Collection Methodology and Data Analysis}
 Data collection techniques began with observing business processes, interviews with owners and literature studies. Literature study is done by digging more information from similar research.
 
@@ -107,9 +111,9 @@ Data analysis was performed with qualitative and quantitative descriptive analys
 
 \subsection{Supply Chain Management Concept}
 
-Ref \cite{Liu2011a} Supply Chain Management Professionals (Vitasek, 2010) is Supply chain management encompasses the planning and management of all activities involved in sourcing, procurement, conversion, and all logistics management activities. Encompasses the planning on business proccess management be a important to stores for the capitals management, it also includes the coordination and collaboration with channel partners, which can be suppliers, intermediaries, third-party service providers, and customers.
+Supply Chain Management Professionals is Supply chain management encompasses the planning and management of all activities involved in sourcing, procurement, conversion, and all logistics management activities \cite{Liu2011a}. Encompasses the planning on business proccess management be a important to stores for the capitals management, it also includes the coordination and collaboration with channel partners, which can be suppliers, intermediaries, third-party service providers, and customers.
 
-Guided by an integrated production plan, supported by various technologies, especially based on Internet/Intranet, and is implemented around supply, production operations, logistics (mainly manufacturing processes), and meeting demand which is Supply Chain Management \cite{Li2018}. Pujawan (2010) stated that supply chain is the network of companies that work hand-in-hand to create and deliver product to the hands of end users \cite{Sampouw}. W. Edwards Deming, author and consultant on quality, says that "The consumer is the most important part of the production line. Quality should be aimed at the needs of the consumer, present and future." \cite{Rusell2011}
+Guided by an integrated production plan, supported by various technologies, especially based on Internet/Intranet, and is implemented around supply, production operations, logistics (mainly manufacturing processes), and meeting demand which is Supply Chain Management \cite{Li2018}. Stated that supply chain is the network of companies that work hand-in-hand to create and deliver product to the hands of end users \cite{Sampouw}. W. Edwards Deming, author and consultant on quality, says that "The consumer is the most important part of the production line. Quality should be aimed at the needs of the consumer, present and future." \cite{Rusell2011}
 
 \subsection{Evolution of Supply Chain Management}
 The supply chain literature review was conducted to study the past researches. The emergence and evolution of SCM may be depicted as a timeline shown in \textbf{Figure \ref{figureEvolution}} \cite{Habib2019}.
@@ -191,7 +195,7 @@ where:\\
 - z = number of standard deviation corresponding to the service level probability\\
 - z$\sigma_d\sqrt{L}$ = safety stock
 
-\section{Results and discussions}
+\section{Results and discussion}
 The results of the study were conducted experiments on data taken from sales applications. This following data product in store \textbf{Table \ref{tableBarang}} :
 \begin{table}[h!]
 	\centering
@@ -292,11 +296,11 @@ R = 0,9 + 1,41
 So, if when stock to reach 2 or 3 pcs, it must be reorder as many as 13 Pcs. In accordance with previous EOQ calculations.
 
 
-\section{Conclutions}
+\section{Conclusion}
 By Using the EOQ model and supply chain management concept can help control inventory in maintaining stock stability in improving customer service. Then be able to maintain expenditure on holding costs and capital can be managed properly. The XYZ Stores make an order every month from the results of this study can be seen how many times a year to make an order. So, The XYZ Stores can be estimated and predicted capital that must be spent every year, estimated revenue for the store and is able to maintain stability from stock out.
 
 \section*{Acknowledgments}
-The authors would like to thank Mr. Prof. Dr. Ir. Eddy Soeryanto Soegoto, MT as Chancellor of the Universitas Komputer Indonesia (UNIKOM), and Mr. Dr. Yeffry Handoko Putra, ST., M.T. as Head of the Master of Information Systems. And special thanks were given to Mulyadi, S.Kom, M.S.I. who have provided full support and guidance so that this paper can be realized. 
+The authors would like to thank Mr. Prof. Dr. Ir. Eddy Soeryanto Soegoto, MT as Chancellor of the Universitas Komputer Indonesia (UNIKOM), Mr. Dr. Yeffry Handoko Putra, ST., M.T. as Head of the Master of Information Systems, Mr. Mulyadi, S.Kom, M.S.I. Lecture of the Universitas Dinamika Bangsa (UNAMA) Jambi. And special thanks were given to Dr. Rahma Wahdiniwaty, Dra., M.Si. who have provided full support and guidance so that this paper can be realized. 
 
 
 \section*{References}
