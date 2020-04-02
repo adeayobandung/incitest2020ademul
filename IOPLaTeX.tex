@@ -51,7 +51,10 @@
 %\usepackage{array}
 \usepackage{enumitem}
 \usepackage{multirow}
-\usepackage[breaklinks=true,colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{mathptmx}
+\usepackage{longtable}
+\usepackage[breaklinks=true,colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\usepackage[small,bf,singlelinecheck=on,labelformat=simple, labelsep=period]{caption}
 
 \begin{document}
 
@@ -59,8 +62,8 @@
 
 \author{Ade Indra Saputra$^{1*}$, Rahma Wahdiniwaty$^{2}$}
 %\author{Ade Indra Saputra, Rahma Wahdiniwaty}
-\address{$^1$Jurusan Magister Sistem Informasi, Fakultas Pascasarjana, Universitas Komputer Indonesia}
-\address{$^2$Jurusan Magister Manajemen, Fakultas Pascarsajana, Universitas Komputer Indonesia}
+\address{$^1$Master of Information System Study, Postgraduate Faculty, Universitas Komputer Indonesia}
+\address{$^2$Master of Management Study, Postgraduate Faculty, Universitas Komputer Indonesia}
 %\address{$^2$Address Two, Neverland}
 %\address{$^2$Universitas Komputer Indonesia}
 \ead{ade.75118017@mahasiswa.unikom.ac.id}
@@ -75,7 +78,7 @@
 
 
 \begin{abstract}
-This study discusses the inventory system in requires good inventory management in order to manage the procurement for customers. One of method that can be used in the management of the inventory is a method of Supply Chain Management (SCM)  concept for inventory control proccess. In inventory managing, the store needs a system that can ensure the supply of products in guranteed quality, on time delivery and the right amount in accordance with the reservation. By application of the supply chain management in calculate reorder point with safety stock can help control inventory in maintaining stock stability in improving customer service. Following the total reorder with saftey stock provides the effect to imporve business performance because it can improve the services to customers, sell new products, and increase sales. So, The XYZ Store can be estimated and predicted capital that must be spent every year, estimated revenue for the store and is able to maintain stability from stock out.
+This study discusses the inventory system in requires good inventory management in order to manage the procurement for customers. Based on purpose of the study the make observations on the research by one of method approach that can be used in the management of the inventory is a method of Supply Chain Management (SCM)  concept for inventory control proccess. In inventory managing, the store needs a system that can ensure the supply of products in guranteed quality, on time delivery and the right amount in accordance with the reservation. By application of the supply chain management in calculate reorder point with safety stock can help control inventory in maintaining stock stability in improving customer service. Following the total reorder with saftey stock provides the effect to imporve business performance because it can improve the services to customers, sell new products, and increase sales. So, The XYZ Store can be estimated and predicted capital that must be spent every year, estimated revenue for the store and is able to maintain stability from stock out.
 
 %The XYZ Store is a one of computer shop in Jambi City which selling computer equipment. This computer shop requires good inventory management in order to manage the procurement for customers precisely, estimated number of minimum ordered and predicted capital that must spent every year. So, a computerized system which is supported by supporting methods which chose in the prepartory proccess in computer shop to ensure that supplies can be existing. One of method that can be used in the management of the inventory is a method of Supply Chain Management (SCM). The system developed is a computer equipment inventory information system using the concept of Supply Chain Management use some software like MySQL for DBMS (Database Mangament System) and Web Application for selling in computer shop.
 
@@ -123,6 +126,15 @@ The supply chain literature review was conducted to study the past researches. T
 	\includegraphics[width=1.0\textwidth]
 		{evolution.png}
 	\caption{\label{figureEvolution}Evolutionary Timeline of Supply Chain Management.}
+\end{figure}
+
+\subsection{Supply Chain Management Information System (SCM IS)}
+The difference between companies between other companies is how to manage management information systems. So, In this modern era how companies manage their information will be the key to the success of a business failure \cite{Indrajit2016a}. Information systems are increasingly in supply chain management because of their ability to reduce costs and increase readiness in the supply chain \cite{Harianja2009}. Intensive information is needed in practice and innovative, so that the information system support is needed in an effective SCM and business strategy. This study, therefore, is at intersection of three important disciplines shown in \textbf{Figure \ref{figureScope}} \cite{Sathasivam, Harianja2009}.
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=0.5\textwidth]
+	{scopeofstudy.png}
+	\caption{\label{figureScope}Scope of Study. SCM IS Concept and Business Strategy.}
 \end{figure}
 
 \subsection{Lot Sizing Method}
@@ -200,9 +212,9 @@ The results of the study were conducted experiments on data taken from sales app
 \begin{table}[h!]
 	\centering
 	\caption{\label{tableBarang} Data transaction popular in 2019 years old at xyz store}
-	\begin{tabular}{ lllcl }
+	\begin{tabular}{ cllcl }
 		\hline
-		\textbf{No} & \textbf{Code} & \textbf{Product Name} & \textbf{Annual Demand} & \textbf{Price} \\
+		\textbf{Numb.} & \textbf{Code} & \textbf{Product Name} & \textbf{Annual Demand} & \textbf{Price} \\
 		\hline
 		1 & BRG037 & Cart 810 & 103 & Rp. 185.000,-  \\ 
 		2 & BRG234 & Tinta alfa ink canon hitam 100 ML & 53 &  Rp. 28.500,-  \\ 
@@ -212,12 +224,11 @@ The results of the study were conducted experiments on data taken from sales app
 \end{table}
 
 Base on table \ref{tableBarang} is the sales data obtained from the sales application in the XYZ store. While the number of sales per product can be seen in the following data:
-\begin{table}[h!]
-	\centering
-	\caption{\label{tableOut} Data stock out, product: Cart 810 in 2019 years old at xyz store}
-	\begin{tabular}{ llcc }
+\begin{center}
+	\begin{longtable}{ clcc }
+		\caption{\label{tableOut} Data stock out, product: Cart 810 in 2019 years old at xyz store}\\
 		\hline
-		\textbf{No} & \textbf{Month} & \textbf{In} & \textbf{Out} \\
+		\textbf{Numb.} & \textbf{Month} & \textbf{In} & \textbf{Out} \\
 		\hline
 		1 & January & 15 & 16  \\ 
 		2 & February & 5 & 6  \\ 
@@ -234,8 +245,8 @@ Base on table \ref{tableBarang} is the sales data obtained from the sales applic
 		\hline
 		\multicolumn{2}{c}{Total} & {105} & {103}\\
 		\hline
-	\end{tabular}
-\end{table}
+	\end{longtable}
+\end{center}
 
 Based on the table \ref{tableOut} is sales and purchase data obtained from sales applications in XYZ stores based on Cartrige 810 products for a year.\\ \\
 \textbf{Calculate EOQ Product: Cart (Cartrige) 810}
@@ -300,7 +311,7 @@ So, if when stock to reach 2 or 3 pcs, it must be reorder as many as 13 Pcs. In 
 By Using the EOQ model and supply chain management concept can help control inventory in maintaining stock stability in improving customer service. Then be able to maintain expenditure on holding costs and capital can be managed properly. The XYZ Stores make an order every month from the results of this study can be seen how many times a year to make an order. So, The XYZ Stores can be estimated and predicted capital that must be spent every year, estimated revenue for the store and is able to maintain stability from stock out.
 
 \section*{Acknowledgments}
-The authors would like to thank Mr. Prof. Dr. Ir. Eddy Soeryanto Soegoto, MT as Chancellor of the Universitas Komputer Indonesia (UNIKOM), Mr. Dr. Yeffry Handoko Putra, ST., M.T. as Head of the Master of Information Systems, Mr. Mulyadi, S.Kom, M.S.I. Lecture of the Universitas Dinamika Bangsa (UNAMA) Jambi. And special thanks were given to Dr. Rahma Wahdiniwaty, Dra., M.Si. who have provided full support and guidance so that this paper can be realized. 
+The authors would like to thank Mr. Prof. Dr. Ir. Eddy Soeryanto Soegoto, MT as Chancellor of the Universitas Komputer Indonesia (UNIKOM), Mrs. Dr. Rahma Wahdiniwaty, Dra., M.Si. as Dean of Postgraduate Faculty,  Mr. Dr. Yeffry Handoko Putra, ST., M.T. as Head of the Master of Information Systems, Mr. Mulyadi, S.Kom, M.S.I. Lecture of the Universitas Dinamika Bangsa (UNAMA) Jambi. And special thanks were given to Dr. Rahma Wahdiniwaty, Dra., M.Si. who have provided full support and guidance so that this paper can be realized. 
 
 
 \section*{References}
